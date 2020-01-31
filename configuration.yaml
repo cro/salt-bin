@@ -1,0 +1,10 @@
+build:
+  libdl:
+    src:
+      - /usr/lib/libdl.so
+      - /usr/lib/libdl.so.1
+      - /usr/lib/libdl.a
+      - /usr/lib/libdl_p.a
+      - /usr/lib/libc.so
+      - /lib/libc.so.7
+    dest: .

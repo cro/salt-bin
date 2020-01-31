@@ -1,9 +1,11 @@
-salt
+git+https://github.com/cro/m2c4fbsd#egg=M2Crypto
+cffi
+git+https://github.com/cro/salt@junos-native#egg=salt
 Jinja2
 # This should be changed to msgpack-python for Packages
 # msgpack-python>0.3,!=0.5.5
 msgpack>=0.5,!=0.5.5
-PyYAML<5.1
+PyYAML
 MarkupSafe
 requests>=1.0.0
 tornado>=4.2.1,<6.0; python_version < '3'
@@ -11,7 +13,7 @@ tornado>=4.2.1,<5.0; python_version >= '3.4'
 
 # Required by Tornado to handle threads stuff.
 futures>=2.0; python_version < '3.0'
-pycryptodomex
+# pycryptodomex
 
 # TODO: Building with a custom openssl 1.1.1 on centos 6 is failing to compile M2Crypto, this should be fixed in the future as M2Crypto is prefered
-#M2Crypto>=0.35.2
+junos-eznc
